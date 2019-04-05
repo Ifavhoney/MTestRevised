@@ -11,8 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".ViewOrderHistory"></activity>
+        <activity android:name=".ViewOrderHistory" />
         <activity android:name=".ShowComplaintsToRestaurant" />
         <activity android:name=".ShowComplaintsToAdmin" />
         <activity android:name=".ComplaintList" />
@@ -55,10 +54,11 @@
         <activity android:name=".RestaurantViewOrders" />
         <activity android:name=".RestaurantViewCustomerOrders" />
         <activity android:name=".RestaurantSuccess" />
-        <activity android:name=".RestaurantDenied"></activity>
+        <activity android:name=".RestaurantDenied" />
         <activity android:name=".CustomerCreditCard" />
         <activity android:name=".CustomerCreditCardList" />
-        <activity android:name=".CustomerCreditCardDetail"></activity>
+        <activity android:name=".CustomerCreditCardDetail" />
+        <activity android:name=".CustomerPayment"></activity>
     </application>
 
 </manifest>

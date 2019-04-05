@@ -1,5 +1,5 @@
 package com.example.john.munchies;
-
+//working
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -108,12 +108,14 @@ public class RestaurantCustomerOrder extends AppCompatActivity implements View.O
     public void onClick(View view){
         if (view == checkout_Btn){
             placeOrder();
+
+            Intent myIntent = new Intent( RestaurantCustomerOrder.this, CustomerPayment.class);
+            startActivity(myIntent);
         }
         if (view == approval_Btn){
             currentDay = day.format(new Date());
 
 //TEST3 BY CHILD DID NOT WORK  - BY VALUE DID - ODD
-
             myRef.child(currentDay).child(num).child("AuthUser: " + userEmail).child("Order").orderByValue().equalTo("Accepted").addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -156,6 +158,10 @@ public class RestaurantCustomerOrder extends AppCompatActivity implements View.O
 
 
      num = "Order: " + n;
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("orderNum", num);
+        editor.apply();
     //TEST FOR DUPLICATION IF THERE IS TIME (Although rare)
     OrderHistoryClass order = new OrderHistoryClass(num, currentDay, orderPrice, sample.toString());
 
@@ -182,6 +188,7 @@ public class RestaurantCustomerOrder extends AppCompatActivity implements View.O
     myRef2.child(num).setValue(order);
 
     Toast.makeText(this, num, Toast.LENGTH_SHORT).show();
+
 
     if (checkout_Btn.isEnabled() && !userEmail.isEmpty()){
         checkout_Btn.setEnabled(false);

@@ -129,7 +129,7 @@ public class CustomerCreditCardList extends AppCompatActivity {
     }
 
 
-    //Display the restaurant name from the database
+    //Display the credit cards from the database
     public void displayCreditCardList(){
         String getCustomerCreditCardEmail = userEmail.toString();
         customerEmail = getCustomerCreditCardEmail.substring(0, getCustomerCreditCardEmail.indexOf("@"));
