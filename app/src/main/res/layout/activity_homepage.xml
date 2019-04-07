@@ -90,6 +90,7 @@
 
                     <Button
                         android:text="Add"
+                        android:visibility="invisible"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
@@ -98,6 +99,7 @@
 
                     <Button
                         android:text="Show"
+                        android:visibility="invisible"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_column="2"
@@ -105,6 +107,7 @@
 
                     <Button
                         android:text="AddRestaurant"
+                        android:visibility="invisible"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_column="2"

@@ -12,11 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".ViewOrderHistory"></activity>
-        <activity android:name=".ShowComplaintsToRestaurant" />
-        <activity android:name=".ShowComplaintsToAdmin" />
-        <activity android:name=".ComplaintList" />
-        <activity android:name=".RestauantComplaint" />
+        <activity android:name=".ViewOrderHistory"
+            android:noHistory="true" ></activity>
+        <activity android:name=".ShowComplaintsToRestaurant"
+            android:noHistory="true" />
+        <activity android:name=".ShowComplaintsToAdmin"
+            android:noHistory="true" />
+        <activity android:name=".ComplaintList"
+            android:noHistory="true"  />
+        <activity android:name=".RestauantComplaint"
+            android:noHistory="true" />
         <activity
             android:name=".RestaurantCustomerOrder"
             android:noHistory="true" />
@@ -48,21 +53,29 @@
         <activity
             android:name=".RestaurantRegistration"
             android:noHistory="true" />
-        <activity android:name=".RestaurantAddItem" />
-        <activity android:name=".RestaurantMenuCRUD" />
+        <activity android:name=".RestaurantAddItem"
+            android:noHistory="true" />
+        <activity android:name=".RestaurantMenuCRUD"
+            android:noHistory="true" />
         <activity android:name=".RestaurantMenu" />
-        <activity android:name=".CustomerComplaint" />
+        <activity android:name=".CustomerComplaint"
+            android:noHistory="true" />
         <activity android:name=".RestaurantViewOrders"
             android:noHistory="true"/>
-        <activity android:name=".RestaurantViewCustomerOrders" />
+        <activity android:name=".RestaurantViewCustomerOrders"
+            android:noHistory="true" />
         <activity android:name=".RestaurantSuccess"
             android:noHistory="true"/>
         <activity android:name=".RestaurantDenied"
             android:noHistory="true"/>
-        <activity android:name=".CustomerCreditCard" />
-        <activity android:name=".CustomerCreditCardList" />
-        <activity android:name=".CustomerCreditCardDetail"></activity>
-        <activity android:name=".CustomerPayment"></activity>
+        <activity android:name=".CustomerCreditCard"
+            android:noHistory="true"  />
+        <activity android:name=".CustomerCreditCardList"
+            android:noHistory="true"  />
+        <activity android:name=".CustomerCreditCardDetail"
+            android:noHistory="true" ></activity>
+        <activity android:name=".CustomerPayment"
+            android:noHistory="true" ></activity>
 
     </application>
 

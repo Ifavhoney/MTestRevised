@@ -220,8 +220,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                         Toast.makeText(Login.this, "Correct Account", Toast.LENGTH_SHORT).show();
 
 
-
-
                         //Successful
                     }
                     else{

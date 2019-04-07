@@ -137,7 +137,7 @@ public class RestaurantLogin extends AppCompatActivity {
             btnGoAddItems.setVisibility(View.INVISIBLE);
             btnLogout.setVisibility(View.INVISIBLE);
             btnComplaint.setVisibility(View.INVISIBLE);
-            btnMakeComp.setVisibility(View.VISIBLE);
+            btnMakeComp.setVisibility(View.INVISIBLE);
             loginMessage.setText("Restaurant Login");
         }
 
