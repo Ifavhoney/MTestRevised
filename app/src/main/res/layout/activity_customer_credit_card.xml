@@ -55,7 +55,8 @@
             android:id="@+id/EditCreditCardNumber"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:inputType="number" />
+            android:inputType="number"
+            android:maxLength="16"/>
     </LinearLayout>
 
     <LinearLayout android:orientation="horizontal"
@@ -72,7 +73,8 @@
             android:id="@+id/EditCreditCardDate"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:inputType="date" />
+            android:inputType="date"
+            android:maxLength="4"/>
     </LinearLayout>
 
     <LinearLayout android:orientation="horizontal"
@@ -89,7 +91,8 @@
             android:id="@+id/EditCreditCardCVV"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:inputType="number" />
+            android:inputType="number"
+            android:maxLength="3"/>
     </LinearLayout>
 
     <LinearLayout android:orientation="horizontal"
